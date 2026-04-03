@@ -61,6 +61,6 @@ todo.txt
 main.c
 
 # virtual env for python package
-.venv
+.venv/
 
-.vscode
+.vscode/
