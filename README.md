@@ -7,7 +7,7 @@ This project is the first project of the 42 school Commun Core. It implements a 
 
 ## Overview
 
-**Libft** is a C library providing essential utility functions organized into tree parts:
+**Libft** is a C library providing essential utility functions organized into three parts:
 - **Part 1**: Standard libc functions
 - **Part 2**: Additional functions not include in the libc, or exist in a different form
 - **Part 3**: Linked list manipulation functions
