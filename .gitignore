@@ -53,3 +53,14 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# todo list
+todo.txt
+
+# test file
+main.c
+
+# virtual env for python package
+.venv
+
+.vscode
