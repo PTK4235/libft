@@ -6,13 +6,11 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 20:21:18 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/03 16:36:06 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/03 20:55:47 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-
 
 char			**ft_split(char const *s, char c);
 static char		**filler(char **res, const char *s, char c);
@@ -37,7 +35,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	}
 	count = ft_count_words(s, c);
-	res = (char **) malloc((count + 1) * sizeof(char *));
+	res = (char **)malloc((count + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
 	res[count] = NULL;
@@ -116,7 +114,7 @@ static size_t	ft_strspn(const char *s, const char c)
 	size_t	size;
 
 	size = 0;
-	while (s[size] && ((unsigned char *)s)[size] != (unsigned char) c)
+	while (s[size] && ((unsigned char *)s)[size] != (unsigned char)c)
 	{
 		size++;
 	}

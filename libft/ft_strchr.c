@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/20 14:07:50 by ptk               #+#    #+#             */
-/*   Updated: 2026/04/03 14:53:43 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/03 20:55:31 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@
  */
 char	*ft_strchr(const char *str, int c)
 {
-
 	while (*str && *str != (unsigned char)c)
 		str++;
-	if (*str == (unsigned char) c)
+	if (*str == (unsigned char)c)
 		return ((char *)str);
 	return (NULL);
 }

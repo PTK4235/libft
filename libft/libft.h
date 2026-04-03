@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:09:39 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/03 16:36:59 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/03 20:56:06 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,6 @@
 #include <stdlib.h> // malloc
 #include <unistd.h> // write
 #include <stdio.h>
-
-#ifdef __cplusplus
-# define RESTRICT
-#else
-# define RESTRICT restrict
-#endif
 
 typedef struct s_list
 {
