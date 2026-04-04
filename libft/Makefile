@@ -1,8 +1,7 @@
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-EXEC = main
-MAIN = main.c
+
 SRC = ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
@@ -47,15 +46,12 @@ SRC = ft_isalpha.c \
 	ft_lstiter.c \
 	ft_lstmap.c
 
-OBJ = $(SRC:.c=.o) $(MAIN:.c=.o)
+OBJ = $(SRC:.c=.o)
 
-all: $(EXEC) $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar -rcs $@ $^
-
-$(EXEC): $(MAIN:.c=.o) $(NAME)
-	$(CC) $(CFLAGS) -g -o $@ $(MAIN:.c=.o) $(NAME) 
 
 %.o: %.c
 	$(CC) $(CFLAGS) -g -c $< -o $@
@@ -65,7 +61,7 @@ clean:
 
 #exec a retirer 
 fclean: clean
-	rm -f $(NAME) $(EXEC)
+	rm -f $(NAME)
 
 re: fclean all
 
