@@ -145,4 +145,8 @@ Complete API documentation is available in:
 - **libft.pdf** - Official subject document
 - **Doxygen comments** - In-code documentation for Doxygen generation
 
+## AI usage
+
+I used Copilot (Claude Haiku 4.5) to help me with the README.md, code documentation, and understanding function specifications (such as buffer guards for strlcat).
+
 
