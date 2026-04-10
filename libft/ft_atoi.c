@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 19:58:09 by ptran             #+#    #+#             */
-/*   Updated: 2026/03/30 14:56:46 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/10 16:06:37 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 int	ft_atoi(const char *str)
 {
-	int			i;
+	size_t		i;
 	long long	neg;
 	long long	ret;
 
