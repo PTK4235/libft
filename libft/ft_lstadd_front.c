@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 18:30:56 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/01 18:43:32 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/12 18:51:02 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
  * @param lst Pointer to list pointer.
  * @param new Node to add to front.
  */
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *node)
 {
-	new->next = *lst;
-	*lst = new;
+	node->next = *lst;
+	*lst = node;
 }
