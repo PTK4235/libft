@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/12 21:23:10 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 19:34:29 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/20 14:50:15 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 char	*ft_strstr(char *str, char *to_find);
 char	*ft_strupcase(char *str);
+char	*ft_strpbrk(const char *str, const char *accept);
 
 /* ========== Utility Functions ========== */
 void	ft_swap(int *a, int *b);
