@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 12:23:41 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:17:42 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:34:03 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  */
 char	*ft_strcpy(char *dest, char *src)
 {
-	size_t		i;
+	size_t	i;
 
 	i = 0;
 	while (src[i] != '\0')

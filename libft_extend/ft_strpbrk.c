@@ -1,44 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
+/*   ft_strpbrk.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/10 12:24:21 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 19:33:51 by ptran            ###   ########.fr       */
+/*   Created: 2026/04/20 14:41:44 by ptran             #+#    #+#             */
+/*   Updated: 2026/04/20 14:50:47 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_extend.h"
 
-/**
- * @brief Capitalizes first letter of each word in string
- *
- * @param str String to capitalize
- * @return Modified string
- */
-char	*ft_strcapitalize(char *str)
+char *ft_strpbrk(const char *str, const char *accept)
 {
-	size_t	i;
-
-	if (str[0] == '\0')
+	if (!str || !accept)
 	{
-		return (str);
+		return (NULL);
 	}
-	str = ft_strlwr(str);
-	str[0] = ft_toupper(str[0]);
-	i = 1;
-	while (str[i] != '\0')
+	while (*str)
 	{
-		if (!ft_isalpha(str[i - 1]) && ft_isalpha(str[i]))
+		if (ft_strchr(accept,*str))
 		{
-			if (!ft_isdigit(str[i - 1]))
-			{
-				str[i] = ft_toupper(str[i]);
-			}
+			return (char *)(str);
 		}
-		i++;
+		str++;
 	}
-	return (str);
+	return (NULL);
 }

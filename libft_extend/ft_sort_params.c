@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 12:10:15 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:23:24 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:33:26 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	main(int argc, char **argv)
 	char	**tab;
 
 	tab = ++argv;
-	ft_bubble_sort((int *) *tab, argc - 1);
+	ft_bubble_sort((int *)*tab, argc - 1);
 	i = 0;
 	while (i < argc - 1)
 	{

@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 06:30:42 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 12:16:00 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:33:18 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
  */
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int			i;
-	int			temp;
+	int	i;
+	int	temp;
 
 	i = 0;
 	while (i < size / 2)

@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 21:04:08 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:16:16 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:33:03 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  */
 int	ft_power(int nb, int power)
 {
-	int		ret;
+	int	ret;
 
 	ret = 1;
 	if (power < 0)

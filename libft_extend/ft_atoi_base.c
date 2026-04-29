@@ -6,14 +6,14 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 12:57:55 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:13:35 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:32:22 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_extend.h"
 
-static int		check_base(char *str);
-static int		get_int(char *str, char *base, long long neg);
+static int	check_base(char *str);
+static int	get_int(char *str, char *base, long long neg);
 
 /**
  * @brief Converts string to integer in a given base
@@ -22,7 +22,7 @@ static int		get_int(char *str, char *base, long long neg);
  * @param base Base to convert from (e.g., "0123456789abcdef" for hex)
  * @return Converted integer value
  */
-int ft_atoi_base(char *str, char *base)
+int	ft_atoi_base(char *str, char *base)
 {
 	size_t		i;
 	long long	neg;
@@ -87,10 +87,9 @@ static int	get_int(char *str, char *base, long long neg)
 			j++;
 		if (base[j] == '\0')
 			return (0);
-		ret += (long long) (ft_power((int)len_base, (int)(len_str - i - 1)) * (int)j);
+		ret += (long long)(ft_power((int)len_base, (int)(len_str - i - 1))
+				* (int)j);
 		i++;
 	}
-	return ((int) (neg * ret));
+	return ((int)(neg * ret));
 }
-
-

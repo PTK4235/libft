@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 18:40:11 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:18:08 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:34:16 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	size_t		i;
+	size_t	i;
 
 	i = 0;
 	if (ft_strlen(to_find) == 0)

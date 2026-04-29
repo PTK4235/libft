@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 12:24:04 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:16:50 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:33:36 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 int	ft_str_is_lowercase(char *str)
 {
-	size_t		i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')

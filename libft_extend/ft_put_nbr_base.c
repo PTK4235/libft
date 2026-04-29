@@ -6,14 +6,14 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 22:51:05 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 14:20:32 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:33:09 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_extend.h"
 
-static void		ft_putnbr_base_aux(long long nbr, char *base);
-static int		check_base(char *str);
+static void	ft_putnbr_base_aux(long long nbr, char *base);
+static int	check_base(char *str);
 
 /**
  * @brief Outputs an integer in a given base
@@ -35,7 +35,7 @@ void	ft_putnbr_base(int nbr, char *base)
 
 void	ft_putnbr_base_aux(long long nbr, char *base)
 {
-	char		rem;
+	char	rem;
 
 	rem = base[nbr % ft_strlen(base)];
 	if (check_base(base) == -1)
@@ -43,7 +43,7 @@ void	ft_putnbr_base_aux(long long nbr, char *base)
 		write(1, "\0", 1);
 		return ;
 	}
-	else if (nbr < (long long) ft_strlen(base))
+	else if (nbr < (long long)ft_strlen(base))
 	{
 		write(1, &rem, 1);
 		return ;
@@ -54,8 +54,8 @@ void	ft_putnbr_base_aux(long long nbr, char *base)
 
 int	check_base(char *str)
 {
-	size_t		i;
-	size_t		j;
+	size_t	i;
+	size_t	j;
 
 	if (str[0] == '\0' || str[1] == '\0')
 		return (-1);
@@ -63,8 +63,8 @@ int	check_base(char *str)
 	j = 0;
 	while (str[i])
 	{
-		if (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r')
-			|| str[i] == '-' || str[i] == '+')
+		if (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r') || str[i] == '-'
+			|| str[i] == '+')
 			return (-1);
 		j = i + 1;
 		while (str[j])

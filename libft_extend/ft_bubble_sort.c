@@ -6,7 +6,7 @@
 /*   By: ptran <ptran@student.42belgium.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 06:46:55 by ptran             #+#    #+#             */
-/*   Updated: 2026/04/13 12:16:45 by ptran            ###   ########.fr       */
+/*   Updated: 2026/04/13 19:32:49 by ptran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 
 void	ft_bubble_sort(int *tab, int size)
 {
-	int		i;
-	int		j;
-	int		temp;
+	int	i;
+	int	j;
+	int	temp;
 
 	i = 0;
 	while (i < size - 1)
@@ -43,4 +43,3 @@ void	ft_bubble_sort(int *tab, int size)
 		i++;
 	}
 }
-
