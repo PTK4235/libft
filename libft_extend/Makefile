@@ -1,8 +1,8 @@
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC_DIR = ../libft
-SRC_FILE = ft_isalpha.c \
+
+SRC = ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
 	ft_isascii.c \
@@ -44,9 +44,8 @@ SRC_FILE = ft_isalpha.c \
 	ft_lstdelone.c \
 	ft_lstclear.c \
 	ft_lstiter.c \
-	ft_lstmap.c
-
-SRC_EXTEND = ft_atoi_base.c \
+	ft_lstmap.c \
+	ft_atoi_base.c \
 	ft_atoi_piscine.c \
 	ft_bubble_sort.c \
 	ft_facto.c \
@@ -74,8 +73,6 @@ SRC_EXTEND = ft_atoi_base.c \
 	ft_strupcase.c \
 	ft_swap.c
 
-SRC = $(addprefix $(SRC_DIR)/, $(SRC_FILE)) $(SRC_EXTEND)
-
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
@@ -88,14 +85,11 @@ $(NAME): $(OBJ)
 
 clean:
 	rm -f $(OBJ)
-
-update:
-	git pull
-
-#exec a retirer 
+ 
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean update all
+re: fclean all
 
-.PHONY: clean fclean update re
+.PHONY: clean fclean re
+
