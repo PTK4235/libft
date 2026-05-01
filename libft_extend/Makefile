@@ -53,9 +53,6 @@ SRC = ft_isalpha.c \
 	ft_is_prime.c \
 	ft_power.c \
 	ft_put_nbr_base.c \
-	ft_rev_int_tab.c \
-	ft_rev_params.c \
-	ft_sort_params.c \
 	ft_sqrt.c \
 	ft_str_is_alpha.c \
 	ft_str_is_lowercase.c \
