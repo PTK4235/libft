@@ -68,7 +68,8 @@ SRC = ft_isalpha.c \
 	ft_strncpy.c \
 	ft_strstr.c \
 	ft_strupcase.c \
-	ft_swap.c
+	ft_swap.c \
+	ft_putnbr_fd_size.c
 
 OBJ = $(SRC:.c=.o)
 
